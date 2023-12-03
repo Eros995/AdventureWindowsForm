@@ -27,41 +27,50 @@ namespace AdventureWindowsForms
         private void loadSaveButton_Click(object sender, EventArgs e)
         {
             string selectedFileName = SaveFileListBox.SelectedItem?.ToString();
-            string playerName = ExtractPlayerNameFromFileName(selectedFileName);
 
-            if (!string.IsNullOrEmpty(selectedFileName) && !string.IsNullOrEmpty(playerName))
+            if (!string.IsNullOrEmpty(selectedFileName))
             {
-                // Determine the folder where the save file is stored (e.g., LocalApplicationData)
-                string saveFolder = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
+                string playerName = ExtractPlayerNameFromFileName(selectedFileName);
 
-                string saveFilePath = Path.Combine(saveFolder, $"{selectedFileName}_savefile.json");
-
-                if (File.Exists(saveFilePath))
+                if (!string.IsNullOrEmpty(playerName))
                 {
-                    if (mainGameForm == null)
+                    // Determine the folder where the save file is stored (e.g., LocalApplicationData)
+                    string saveFolder = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
+
+                    string saveFilePath = Path.Combine(saveFolder, $"{selectedFileName}_savefile.json");
+
+                    if (File.Exists(saveFilePath))
                     {
-                        mainGameForm = new MainGameForm(selectedFileName, playerName, mainMenuForm);
+                        if (mainGameForm == null)
+                        {
+                            mainGameForm = new MainGameForm(selectedFileName, playerName, mainMenuForm);
+                        }
+                        else
+                        {
+                            mainGameForm.PlayerName = playerName;
+                            // Additional updates or operations as needed...
+                        }
+
+                        mainGameForm.LoadGameStateFromFile(saveFilePath, playerName);
+                        mainGameForm.Show();
+                        this.Hide();
                     }
                     else
                     {
-                        mainGameForm.PlayerName = playerName;
-                        // Additional updates or operations as needed...
+                        MessageBox.Show("Save file not found!");
                     }
-
-                    mainGameForm.LoadGameStateFromFile(saveFilePath, playerName);
-                    mainGameForm.Show();
-                    this.Hide();
                 }
                 else
                 {
-                    MessageBox.Show("Save file not found!");
+                    MessageBox.Show("Please select a save file with a valid player name.");
                 }
             }
             else
             {
-                MessageBox.Show("Please select a save file and ensure it has a valid player name.");
+                MessageBox.Show("Please select a save file.");
             }
         }
+
 
 
 

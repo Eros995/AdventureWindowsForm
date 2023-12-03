@@ -60,11 +60,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\erosa\\source\\repos\\AdventureWindowsForms\\AdventureWindowsForms\\AdventureWindowsForms.csproj",
+      "projectUniqueName": "C:\\Users\\erosa\\Documents\\GitHub\\AdventureWindowsForm\\AdventureWindowsForms\\AdventureWindowsForms\\AdventureWindowsForms.csproj",
       "projectName": "AdventureWindowsForms",
-      "projectPath": "C:\\Users\\erosa\\source\\repos\\AdventureWindowsForms\\AdventureWindowsForms\\AdventureWindowsForms.csproj",
+      "projectPath": "C:\\Users\\erosa\\Documents\\GitHub\\AdventureWindowsForm\\AdventureWindowsForms\\AdventureWindowsForms\\AdventureWindowsForms.csproj",
       "packagesPath": "C:\\Users\\erosa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\erosa\\source\\repos\\AdventureWindowsForms\\AdventureWindowsForms\\obj\\",
+      "outputPath": "C:\\Users\\erosa\\Documents\\GitHub\\AdventureWindowsForm\\AdventureWindowsForms\\AdventureWindowsForms\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\erosa\\AppData\\Roaming\\NuGet\\NuGet.Config",

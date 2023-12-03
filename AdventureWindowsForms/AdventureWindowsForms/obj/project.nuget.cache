@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "AtOGDgt+un+sBAiPPQSmLfHFPYddnbmt17TxA4IyngBYEaQQJi473NJ0O/2UkPtp+3RzX/BQ113TQxrVzPpjQQ==",
+  "dgSpecHash": "wmMGbIU9Im0Rd4ZAiw/0m8aRLKCnBLzL2MVDeP/LCoPeHOB2+0FNb/bWPMf69ixExZ9ZY1d4RjWATxGkyB412g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\erosa\\source\\repos\\AdventureWindowsForms\\AdventureWindowsForms\\AdventureWindowsForms.csproj",
+  "projectFilePath": "C:\\Users\\erosa\\Documents\\GitHub\\AdventureWindowsForm\\AdventureWindowsForms\\AdventureWindowsForms\\AdventureWindowsForms.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\erosa\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],
